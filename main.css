@@ -1,0 +1,13 @@
+	
+	body 
+	{
+	background-color: white;  /* Adicionar cores de fundo ao site, ou pode ser escrito assim (style="background-color: red;") em <body> */
+	color: red;
+	}
+	
+	
+	p 
+	{
+	text-align: justify; /* Alinhar texto centro a centro */
+	text-indent: 50px; /* Dar parágrafo ao texto */
+	}
