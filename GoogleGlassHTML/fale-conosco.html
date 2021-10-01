@@ -8,7 +8,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
-
+    <link rel='stylesheet' type='text/css' media='screen' href='form.css'>
 
 
 
@@ -40,40 +40,68 @@
             </nav>
 
         </header>
+        <section id="corpo-full">
+            <article id="noticia-principal">
+                <header id="cabecalho-artigo">
+                    <hgroup>
+                        <h3> Fale Conosco > Contato </h3>
+                        <h1> Formulário de Contato <h1>
+                        <h4> Atualizado em 01/Maio/2013 por Gustavo Quiel </h4>
+                        <!-- <h3>  por Gustavo Quiel - Atualizado em 01/Maio/2013 </h3> -->
+                    </hgroup>
+                </header>
 
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+            <form method="GET" id="fContato" action="mailto:astonish1010@gmail.com">
 
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
+                <fieldset id="usuario">
+                    <legend> Identificação do Usuário</legend>
+                <p>Nome:<input type="text" name="tNome" id="cNome" maxlength="50" size="30" placeholder="Nome Completo"> </p>
+                <p>Senha:<input type="password" name="tSenha" id="cSenha" maxlength="8" size="8" placeholder="8 Dígitos"></p>
+                <p>E-mail:<input type="email" name="tEmail" id="cEmail" maxlength="50" size="30" placeholder="E-mail"></p> 
+                <fieldset id="sexo"><legend>Sexo:</legend>
+                    <input type="radio" name="Sexo" id="cMas"> <label for="cMas">Masculino</label><br>
+                    <input type="radio" name="Sexo" id="cFem"> <label for="cFem">Feminino</label> 
+                </fieldset> 
+                <p>Data de Nascimento:<input type="date" name="Data" id="cData"></p>
+                </fieldset>
+            
+                <fieldset id="endereco">
+                    <legend>Endereço do Usuário</legend>
+                <p>Logradouro:<input type="text" name="tLogradouro" id="cLogradouro" maxlength="50" size="30"> </p>
+                <p>Número:<input type="number" name="Número" id="cNúmero" min="0" max="999"> </p>
+                <p>Estado:<select name="tEstado" id="cEstado"> 
+                    <optgroup label="Região Norte">
+                        <option>AC</option>
+                        <option>AM</option>
+                    </optgroup>    
+                    <optgroup label="Centro-Oeste">
+                        <option>DF</option>
+                        <option>GO</option>
+                        <option>MT</option>
+                    </optgroup>
+                </select>
+                </p>
+                <p>Cidade:<input type="text" name="tCidade" id="cCidade" maxlength="50" size="30" placeholder="Sua Cidade"></p>
+                </fieldset>
+                
+                <fieldset id="mensagem">
+                    <legend>Mensagem do Usuário</legend>
+                <p><label for="grau">Grau de Urgência:</label><input type="range" id="grau" min="0" max="6"></p>
+                <p>Mensagem:<textarea name="namemsg" id="msg" cols="45" rows="5" placeholder="Deixe sua mensagem">  </textarea></p>
+                </fieldset>    
 
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
+                <fieldset id="pedido">
+                    <legend>Quero um Google Glass</legend>
+                Gostaria de adquirir um Google Glass quando disponível
+                Cor:
+                Quantidade:
+                Preço Total: R$
+                </fieldset>
 
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
+            </form>
 
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
-
-
-[BOTÃO ENVIAR]
-
+            </article>
+        </section>
 <footer id="rodape">
         
         
